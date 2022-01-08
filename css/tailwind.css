@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .button_common_corporate {
+    @apply rounded-full capitalize px-8 py-2 font-bold mt-2 bg-transparent hover:bg-corporate text-corporate hover:text-white border-2 border-corporate;
+  }
+
+  .common_transition {
+    @apply transition-all ease-in-out duration-500;
+  }
+
+  .pill_tag {
+    @apply rounded-full py-2 px-8 bg-gray-100 text-corporate font-bold text-center uppercase;
+  }
+
+  .round_bordered_icon {
+    @apply flex-center bg-white hover:bg-corporate text-corporate hover:text-white border-2 border-gray-200 hover:border-corporate p-5 text-2xl rounded-full;
+  }
+}
